@@ -75,8 +75,9 @@ async def buy(interaction: discord.Interaction, ex: str):
     await interaction.response.send_message(f"No match found for {ex}.")
 
 # ===================== RUN BOT =====================
+# Load token from Railway environment variable
 token = os.getenv("TOKEN")
 if not token:
     print("❌ TOKEN not found! Add it in Railway Variables.")
 else:
-    bot.run(TOKEN)
+    bot.run(token)
