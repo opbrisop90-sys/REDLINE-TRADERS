@@ -79,4 +79,4 @@ token = os.getenv("TOKEN")
 if not token:
     print("❌ TOKEN not found! Add it in Railway Variables.")
 else:
-    bot.run(token)
+    bot.run(TOKEN)
